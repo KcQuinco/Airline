@@ -16,8 +16,8 @@ function book () {
 		document.getElementById("blank2").innerHTML = "&nbsp;First name is empty!";
 	} else {document.getElementById("blank2").innerHTML = "";}
 
-	if (email.indexOf("@")) {
-		document.getElementById("blank4").innerHTML = "&nbsp;Email is empty and/or observe proper format in email (with @)!";
+	if (email.indexOf('@') || email.length ==0) {
+		document.getElementById("blank4").innerHTML = "&nbsp;email is empty and/or observe proper format in email (with @)!";
 	}
 
 	if (origin.length == 0) {
