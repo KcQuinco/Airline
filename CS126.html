@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> University of the Philippines Mindanao Airline Express Online Boooking </title>
+
+		<style>
+			#first {
+				font-weight: bold;
+				text-align: center;
+				font-size: 28px;
+			}
+			#second {
+				margin-left: 328px;
+				font-family: sans-serif;
+ 				font-size: 15px;
+				color: #4D4E4F;
+			}
+			h1 {
+				margin-left: 310px;
+				font-family: sans-serif;
+ 				font-size: 12px;
+				color: #4D4E4F;
+			}
+			input {
+				width: 20%;
+				padding: 10px 15px;
+				margin: 5px 0;
+				border: none;
+				border-bottom: 1px solid gray;
+				display: : table-cell;
+			}
+			select { 
+				width: 23%;
+				padding: 10px 15px;
+				margin: 5px 0;
+				border: none;
+				border-bottom: 1px solid gray;
+			}
+			button {
+				margin-left: 150px;
+				width: 120px;
+				height: 30px;
+			}
+			p {
+				word-break: keep-all;
+			}
+			#blank1, #blank2, #blank3, #blank4, #blank5, #blank6, #blank7, #blank8 {
+				color: red;
+				margin-left: 50px;
+			} 
+		</style>
+	</head>
+
+	<body>
+		<p id="first"> <i> University of the Philippines Mindanao Airline Express Online Boooking </i> </p>
+		<p id="second"> &emsp;&emsp;&emsp; PASSENGER AND FLIGHT DETAILS </p>
+		<h1>
+			Last Name: &emsp;&emsp; <input type="text" id="lname"> 
+				<span id="blank1"> </span> <br>  
+			First Name: &emsp;&emsp;<input type="text" id="fname"> 
+				<span id="blank2"> </span> <br> 
+			Gender: &emsp;&emsp;&emsp;&ensp; <select id="gender">
+						 <option> Male </option>
+						  <option> Female </option> 
+						  <option> N/A </option>
+					</select> 
+				<span id="blank3"> </span> <br>  
+			Email Address: &ensp;<input type="text" id="email"> 
+				<span id="blank4"> </span> <br>  
+			Origin: &emsp;&emsp;&emsp;&emsp;&ensp;<input type="text" id="origin">
+				<span id="blank5"> </span>  <br>
+			Destination: &emsp;&emsp;<input type="text" id="destination">
+				<span id="blank6"> </span> <br>  
+			Departure Date: &ensp;<input type="date" id="ddate"> 
+				<span id="blank7"> </span> <br>
+			Return Date:&emsp;&emsp;<input type="date" id="rdate"> 
+				<span id="blank8"> </span>  <br> <br>
+			<button onclick="book()" style="background-color:#0000b0; color:white; border-color:#0000b0; border-radius: 2px;">Submit</button>
+
+			<script src="CS126.js"> </script>
+		</h1>
+	</body>
+</html>
